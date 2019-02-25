@@ -27,7 +27,7 @@ init7 |No | | Active
 init8 |No | | Active
 apt-cipher |No | | Active
 bangzi-test |No | | Active
-blckchnd-testnet |No | | Active
+blckchnd-testnet |Yes |2019-02-25 | Active
 clockwork.witness-1 |No | | Active
 lafona-testnet |No | | Active
 lafona-testnet |No | | Active
