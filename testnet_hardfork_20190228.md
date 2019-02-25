@@ -25,11 +25,11 @@ init5 |No | | Active
 init6 |No | | Active
 init7 |No | | Active
 init8 |No | | Active
+init9 |No | | Active
 apt-cipher |No | | Active
 bangzi-test |No | | Active
 blckchnd-testnet |Yes |2019-02-25 | Active
 clockwork.witness-1 |No | | Active
-lafona-testnet |No | | Active
 lafona-testnet |No | | Active
 oxarbitrage-test |Yes |2019-02-25 | Active
 startail.witness.testnet |No | | Active
