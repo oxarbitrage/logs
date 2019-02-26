@@ -12,7 +12,7 @@
 
 **All witnesses in the next table must upgarde before deadline date or will be unvoted and replaced.**
 
-## Table
+## Tables
 
 Name | Updated? | Date | Status
 ---|---|---|---
@@ -38,7 +38,8 @@ witness-eu-testnet |No | | Active
 witness.yao.test |No | | Active
 witness.zapata |Yes |2019-02-26 | Active
 
-Following standby nodes updated and could be included:
+
+The following standby nodes updated and could be included:
 
 Name | Updated? | Date | Status
 ---|---|---|---
