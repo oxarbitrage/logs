@@ -26,14 +26,23 @@ init6 |No | | Active
 init7 |No | | Active
 init8 |No | | Active
 init9 |No | | Active
-apt-cipher |No | | Active
-bangzi-test |No | | Active
+apt-cipher |Yes |2019-02-26 | Active
+bangzi-test |Yes |2019-02-25 | Active
 blckchnd-testnet |Yes |2019-02-25 | Active
 clockwork.witness-1 |No | | Active
-lafona-testnet |No | | Active
+lafona-testnet |Yes |2019-02-25 | Active
 oxarbitrage-test |Yes |2019-02-25 | Active
 startail.witness.testnet |No | | Active
 thom-witness |Yes | 2019-02-25 | Active
 witness-eu-testnet |No | | Active
 witness.yao.test |No | | Active
-witness.zapata |No | | Active
+witness.zapata |Yes |2019-02-26 | Active
+
+Following standby nodes updated and could be included:
+
+Name | Updated? | Date | Status
+---|---|---|---
+shakan(confirm name) |Yes |2019-02-25 | Backup
+btspp-testnet |Yes |2019-02-26 | Backup
+
+
