@@ -46,6 +46,8 @@ Name | Updated? | Date | Status
 shakan(confirm name) |Yes |2019-02-25 | Backup
 btspp-testnet |Yes |2019-02-26 | Backup
 openledger-dc |Yes |2019-02-26 | Backup
+abit-test |Yes |2019-02-26 | Backup
+
 
 
 
