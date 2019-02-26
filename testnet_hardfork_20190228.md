@@ -39,11 +39,13 @@ witness.yao.test |No | | Active
 witness.zapata |Yes |2019-02-26 | Active
 
 
-The following standby nodes updated and could be included:
+The following standby nodes are updated and can be included:
 
 Name | Updated? | Date | Status
 ---|---|---|---
 shakan(confirm name) |Yes |2019-02-25 | Backup
 btspp-testnet |Yes |2019-02-26 | Backup
+openledger-dc |Yes |2019-02-26 | Backup
+
 
 
