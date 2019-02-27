@@ -4,50 +4,36 @@
 
 - Hardfork trigger date: 2019-02-28 14:02:00 UTC
 
-- Deadline date: 2019-02-27 23:59:00 UTC
+- Deadline date: Closed
 
 - Tag: https://github.com/bitshares/bitshares-core/releases/tag/test-2.0.190225
 
 - Release Notes: https://github.com/bitshares/bitshares-core/issues/1569
 
-**All witnesses in the next table must upgarde before deadline date or will be unvoted and replaced.**
+**All witnesses in the next table are updated and are going to pass the hardfork trigger of 2019-02-28 14:02:00 UTC**
 
 ## Tables
 
-Name | Updated? | Date | Status
----|---|---|---
-init0 |No | | Active
-init1 |No | | Active
-init2 |No | | Active
-init3 |No | | Active
-init4 |No | | Active
-init5 |No | | Active
-init6 |No | | Active
-init7 |No | | Active
-init8 |No | | Active
-init9 |No | | Active
-apt-cipher |Yes |2019-02-26 | Active
-bangzi-test |Yes |2019-02-25 | Active
-blckchnd-testnet |Yes |2019-02-25 | Active
-clockwork.witness-1 |No | | Active
-lafona-testnet |Yes |2019-02-25 | Active
-oxarbitrage-test |Yes |2019-02-25 | Active
-startail.witness.testnet |No | | Active
-thom-witness |Yes | 2019-02-25 | Active
-witness-eu-testnet |No | | Active
-witness.yao.test |No | | Active
-witness.zapata |Yes |2019-02-26 | Active
-
-
-The following standby nodes are updated and can be included:
-
-Name | Updated? | Date | Status
----|---|---|---
-shakan(confirm name) |Yes |2019-02-25 | Backup
-btspp-testnet |Yes |2019-02-26 | Backup
-openledger-dc |Yes |2019-02-26 | Backup
-abit-test |Yes |2019-02-26 | Backup
-
-
-
-
+Name | Updated? | Status
+---|---|---
+abit-test|Yes|Active
+apt-cipher|Yes|Active
+bangzi-test|Yes|Active
+blckchnd-testnet|Yes|Active
+btspp-testnet|Yes|Active
+clockwork.witness-1|Yes|Active
+fox-190225|Yes|Active
+freedom-t|Yes|Active
+init0|Yes|Active
+lafona-testnet|Yes|Active
+openledger-dc|Yes|Active
+oxarbitrage-test|Yes|Active
+roelandp|Yes|Active
+sahkan-bts-testnet|Yes|Active
+startail.witness.testnet|Yes|Active
+thom-witness|Yes|Active
+witness-still|Yes|Active
+witness.yao.test|Yes|Active
+witness.zapata|Yes|Active
+xeldal-test|Yes|Active
+zhaomu-test|Yes|Active
