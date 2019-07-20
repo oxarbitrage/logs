@@ -1,0 +1,550 @@
+oxarbitrage@oxarbitrage-Lenovo-ideapad-320S-14IKB:~/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays$ make
+[  3%] Built target project_secp256k1
+[ 27%] Built target fc
+[ 28%] Built target log_test
+[ 29%] Built target ecc_test
+[ 29%] Built target api
+[ 29%] Built target blind
+[ 30%] Built target real128_test
+[ 31%] Built target bip_lock
+[ 36%] Built target all_tests
+[ 37%] Built target hmac_test
+[ 38%] Built target task_cancel_test
+[ 39%] Built target bloom_test
+[ 41%] Built target graphene_db
+[ 42%] Built target cat-parts
+File "/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/hardfork.hpp" up-to-date with .d directory
+[ 42%] Built target build_hardfork_hpp
+[ 42%] Building CXX object libraries/chain/CMakeFiles/graphene_chain.dir/database.cpp.o
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/object_database.hpp:27:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:34,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/undo_database.hpp: In destructor ‘graphene::db::undo_database::session::~session()’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/undo_database.hpp:69:22: warning: throw will always call terminate() [-Wterminate]
+                      throw; // maybe crash..
+                      ^~~~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/undo_database.hpp:69:22: note: in C++11 destructors default to noexcept
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:29:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp: At global scope:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:192:146: error: value ‘1000’ of type ‘graphene::chain::vesting_balance_object*’ is not a constant expression
+               member_offset<vesting_balance_object, asset_id_type, (size_t) (offset_s(vesting_balance_object,balance) + offset_s(asset,asset_id))>,
+                                                                                                                                                  ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:192:146: note: in template argument for type ‘long unsigned int’ 
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:194:141: error: value ‘1000’ of type ‘graphene::chain::vesting_balance_object*’ is not a constant expression
+               member_offset<vesting_balance_object, share_type, (size_t) (offset_s(vesting_balance_object,balance) + offset_s(asset,amount))>
+                                                                                                                                             ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:194:141: note: in template argument for type ‘long unsigned int’ 
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:197:12: error: template argument 2 is invalid
+            >,
+            ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:197:12: error: template argument 4 is invalid
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:204:9: error: template argument 2 is invalid
+         >
+         ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:205:7: error: template argument 3 is invalid
+       >
+       ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/vesting_balance_object.hpp:206:4: error: template argument 2 is invalid
+    > vesting_balance_multi_index_type;
+    ^
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:0:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp: In member function ‘void graphene::chain::database::settle_betting_market_group(const graphene::chain::betting_market_group_object&)’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:306:24: warning: unused variable ‘event’ [-Wunused-variable]
+    const event_object& event = betting_market_group.event_id(*this);
+                        ^~~~~
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:31:0:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp: In function ‘void graphene::chain::schedule_pending_dividend_balances(graphene::chain::database&, const graphene::chain::asset_object&, const graphene::chain::asset_dividend_data_object&, const fc::time_point_sec&, const account_balance_index&, const vesting_balance_index&, const total_distributed_dividend_balance_object_index&, const pending_dividend_payout_balance_for_holder_object_index&)’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:884:31: error: request for member ‘get’ in ‘(& vesting_index)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::indices()’, which is of non-class type ‘const index_type {aka const int}’
+       vesting_index.indices().get<by_asset_balance>().lower_bound(boost::make_tuple(dividend_holder_asset_obj.id, balance_type));
+                               ^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:884:51: error: expected primary-expression before ‘>’ token
+       vesting_index.indices().get<by_asset_balance>().lower_bound(boost::make_tuple(dividend_holder_asset_obj.id, balance_type));
+                                                   ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:884:53: error: expected primary-expression before ‘)’ token
+       vesting_index.indices().get<by_asset_balance>().lower_bound(boost::make_tuple(dividend_holder_asset_obj.id, balance_type));
+                                                     ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:886:31: error: request for member ‘get’ in ‘(& vesting_index)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::indices()’, which is of non-class type ‘const index_type {aka const int}’
+       vesting_index.indices().get<by_asset_balance>().upper_bound(boost::make_tuple(dividend_holder_asset_obj.id, balance_type, share_type()));
+                               ^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:886:51: error: expected primary-expression before ‘>’ token
+       vesting_index.indices().get<by_asset_balance>().upper_bound(boost::make_tuple(dividend_holder_asset_obj.id, balance_type, share_type()));
+                                                   ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:886:53: error: expected primary-expression before ‘)’ token
+       vesting_index.indices().get<by_asset_balance>().upper_bound(boost::make_tuple(dividend_holder_asset_obj.id, balance_type, share_type()));
+                                                     ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp: In constructor ‘graphene::chain::database::perform_chain_maintenance(const graphene::chain::signed_block&, const graphene::chain::global_property_object&)::vote_tally_helper::vote_tally_helper(graphene::chain::database&, const graphene::chain::global_property_object&)’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:1413:39: error: request for member ‘get’ in ‘(& vesting_index)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::indices()’, which is of non-class type ‘const index_type {aka const int}’
+               vesting_index.indices().get<by_asset_balance>().lower_bound(boost::make_tuple(asset_id_type(), balance_type));
+                                       ^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:1413:59: error: expected primary-expression before ‘>’ token
+               vesting_index.indices().get<by_asset_balance>().lower_bound(boost::make_tuple(asset_id_type(), balance_type));
+                                                           ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:1413:61: error: expected primary-expression before ‘)’ token
+               vesting_index.indices().get<by_asset_balance>().lower_bound(boost::make_tuple(asset_id_type(), balance_type));
+                                                             ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:1415:39: error: request for member ‘get’ in ‘(& vesting_index)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::indices()’, which is of non-class type ‘const index_type {aka const int}’
+               vesting_index.indices().get<by_asset_balance>().upper_bound(boost::make_tuple(asset_id_type(), balance_type, share_type()));
+                                       ^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:1415:59: error: expected primary-expression before ‘>’ token
+               vesting_index.indices().get<by_asset_balance>().upper_bound(boost::make_tuple(asset_id_type(), balance_type, share_type()));
+                                                           ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_maint.cpp:1415:61: error: expected primary-expression before ‘)’ token
+               vesting_index.indices().get<by_asset_balance>().upper_bound(boost::make_tuple(asset_id_type(), balance_type, share_type()));
+                                                             ^
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:34:0:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_update.cpp: In member function ‘void graphene::chain::database::update_global_dynamic_data(const graphene::chain::signed_block&)’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_update.cpp:49:34: warning: unused variable ‘gpo’ [-Wunused-variable]
+    const global_property_object& gpo = get_global_properties();
+                                  ^~~
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:36:0:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp: In function ‘void get_relevant_accounts(const graphene::db::object*, boost::container::flat_set<graphene::db::object_id<1, 2, graphene::chain::account_object> >&)’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘tournament_object_type’ not handled in switch [-Wswitch]
+       switch( (object_type)obj->id.type() )
+             ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘tournament_details_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘match_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘game_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘sport_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘event_group_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘event_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘betting_market_rules_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘betting_market_group_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘betting_market_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:290:13: warning: enumeration value ‘bet_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:365:13: warning: enumeration value ‘impl_asset_dividend_data_type’ not handled in switch [-Wswitch]
+       switch( (impl_object_type)obj->id.type() )
+             ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:365:13: warning: enumeration value ‘impl_pending_dividend_payout_balance_for_holder_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:365:13: warning: enumeration value ‘impl_distributed_dividend_balance_data_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:365:13: warning: enumeration value ‘impl_betting_market_position_object_type’ not handled in switch [-Wswitch]
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:365:13: warning: enumeration value ‘impl_global_betting_statistics_object_type’ not handled in switch [-Wswitch]
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/account_object.hpp:26:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:27,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp: In instantiation of ‘const graphene::db::object& graphene::chain::generic_index<ObjectType, MultiIndexType>::insert(graphene::db::object&&) [with ObjectType = graphene::chain::vesting_balance_object; MultiIndexType = int]’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:475:3:   required from here
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:52:43: error: request for member ‘insert’ in ‘((graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>*)this)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::_indices’, which is of non-class type ‘graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::index_type {aka int}’
+             auto insert_result = _indices.insert( std::move( static_cast<ObjectType&>(obj) ) );
+                                  ~~~~~~~~~^~~~~~
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/account_object.hpp:26:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:27,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp: In instantiation of ‘const graphene::db::object* graphene::chain::generic_index<ObjectType, MultiIndexType>::find(graphene::db::object_id_type) const [with ObjectType = graphene::chain::vesting_balance_object; MultiIndexType = int]’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:475:3:   required from here
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:102:25: error: ‘int’ is not a class, struct, or union type
+             return &*itr;
+                         ^
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:100:33: error: request for member ‘find’ in ‘((const graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>*)this)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::_indices’, which is of non-class type ‘const index_type {aka const int}’
+             auto itr = _indices.find( id );
+                        ~~~~~~~~~^~~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:101:33: error: request for member ‘end’ in ‘((const graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>*)this)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::_indices’, which is of non-class type ‘const index_type {aka const int}’
+             if( itr == _indices.end() ) return nullptr;
+                        ~~~~~~~~~^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp: In instantiation of ‘void graphene::chain::generic_index<ObjectType, MultiIndexType>::inspect_all_objects(std::function<void(const graphene::db::object&)>) const [with ObjectType = graphene::chain::vesting_balance_object; MultiIndexType = int]’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:475:3:   required from here
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:108:16: error: ‘begin’ was not declared in this scope
+                for( const auto& ptr : _indices )
+                ^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:108:16: note: suggested alternatives:
+In file included from /usr/include/c++/7/string:51:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:4,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/usr/include/c++/7/bits/range_access.h:87:5: note:   ‘std::begin’
+     begin(_Tp (&__arr)[_Nm])
+     ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/range/functions.hpp:18:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/iterator_range_core.hpp:38,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:30,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/range/begin.hpp:106:61: note:   ‘boost::range_adl_barrier::begin’
+ inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type begin( const T& r )
+                                                             ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/aux_/begin_end.hpp:17:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list0.hpp:27,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list10.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list20.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list.hpp:36,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/policies/policy.hpp:9,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:32,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/mpl/begin_end_fwd.hpp:22:38: note:   ‘boost::mpl::begin’
+ template< typename Sequence > struct begin;
+                                      ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/range/functions.hpp:18:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/iterator_range_core.hpp:38,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:30,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/range/begin.hpp:106:61: note:   ‘boost::range_adl_barrier::begin’
+ inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type begin( const T& r )
+                                                             ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple/detail/convert_impl.hpp:12:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/iterator/zip_iterator.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/combine.hpp:14,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:33,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:
+/home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/begin.hpp:92:5: note:   ‘boost::fusion::begin’
+     begin(Sequence const& seq)
+     ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/begin.hpp:14:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple/detail/convert_impl.hpp:12,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/iterator/zip_iterator.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/combine.hpp:14,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:33,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:
+/home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic_fwd.hpp:62:16: note:   ‘boost::fusion::result_of::begin’
+         struct begin;
+                ^~~~~
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/account_object.hpp:26:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:27,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:108:16: error: ‘end’ was not declared in this scope
+                for( const auto& ptr : _indices )
+                ^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:108:16: note: suggested alternatives:
+In file included from /usr/include/c++/7/string:51:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:4,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/usr/include/c++/7/bits/range_access.h:97:5: note:   ‘std::end’
+     end(_Tp (&__arr)[_Nm])
+     ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/range/functions.hpp:19:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/iterator_range_core.hpp:38,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:30,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/range/end.hpp:100:61: note:   ‘boost::range_adl_barrier::end’
+ inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type end( const T& r )
+                                                             ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/aux_/begin_end.hpp:17:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list0.hpp:27,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list10.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list20.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list.hpp:36,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/policies/policy.hpp:9,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:32,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/mpl/begin_end_fwd.hpp:23:38: note:   ‘boost::mpl::end’
+ template< typename Sequence > struct end;
+                                      ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/range/functions.hpp:19:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/iterator_range_core.hpp:38,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:30,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/range/end.hpp:100:61: note:   ‘boost::range_adl_barrier::end’
+ inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type end( const T& r )
+                                                             ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/container/list/cons.hpp:17:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/iterator/segmented_iterator.hpp:14,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:12,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/begin.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple/detail/convert_impl.hpp:12,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/iterator/zip_iterator.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/combine.hpp:14,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:33,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:
+/home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/end.hpp:92:5: note:   ‘boost::fusion::end’
+     end(Sequence const& seq)
+     ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/begin.hpp:14:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple/detail/convert_impl.hpp:12,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/iterator/zip_iterator.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/combine.hpp:14,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:33,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:
+/home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic_fwd.hpp:68:16: note:   ‘boost::fusion::result_of::end’
+         struct end;
+                ^~~
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/account_object.hpp:26:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:27,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp: In instantiation of ‘fc::uint128 graphene::chain::generic_index<ObjectType, MultiIndexType>::hash() const [with ObjectType = graphene::chain::vesting_balance_object; MultiIndexType = int]’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:475:3:   required from here
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:117:13: error: ‘begin’ was not declared in this scope
+             for( const auto& ptr : _indices )
+             ^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:117:13: note: suggested alternatives:
+In file included from /usr/include/c++/7/string:51:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:4,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/usr/include/c++/7/bits/range_access.h:87:5: note:   ‘std::begin’
+     begin(_Tp (&__arr)[_Nm])
+     ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/range/functions.hpp:18:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/iterator_range_core.hpp:38,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:30,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/range/begin.hpp:106:61: note:   ‘boost::range_adl_barrier::begin’
+ inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type begin( const T& r )
+                                                             ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/aux_/begin_end.hpp:17:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list0.hpp:27,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list10.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list20.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list.hpp:36,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/policies/policy.hpp:9,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:32,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/mpl/begin_end_fwd.hpp:22:38: note:   ‘boost::mpl::begin’
+ template< typename Sequence > struct begin;
+                                      ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/range/functions.hpp:18:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/iterator_range_core.hpp:38,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:30,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/range/begin.hpp:106:61: note:   ‘boost::range_adl_barrier::begin’
+ inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type begin( const T& r )
+                                                             ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple/detail/convert_impl.hpp:12:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/iterator/zip_iterator.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/combine.hpp:14,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:33,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:
+/home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/begin.hpp:92:5: note:   ‘boost::fusion::begin’
+     begin(Sequence const& seq)
+     ^~~~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/begin.hpp:14:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple/detail/convert_impl.hpp:12,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/iterator/zip_iterator.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/combine.hpp:14,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:33,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:
+/home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic_fwd.hpp:62:16: note:   ‘boost::fusion::result_of::begin’
+         struct begin;
+                ^~~~~
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/account_object.hpp:26:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:27,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:117:13: error: ‘end’ was not declared in this scope
+             for( const auto& ptr : _indices )
+             ^~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:117:13: note: suggested alternatives:
+In file included from /usr/include/c++/7/string:51:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:4,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/usr/include/c++/7/bits/range_access.h:97:5: note:   ‘std::end’
+     end(_Tp (&__arr)[_Nm])
+     ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/range/functions.hpp:19:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/iterator_range_core.hpp:38,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:30,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/range/end.hpp:100:61: note:   ‘boost::range_adl_barrier::end’
+ inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type end( const T& r )
+                                                             ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/aux_/begin_end.hpp:17:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list0.hpp:27,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list10.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list/list20.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/mpl/list.hpp:36,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/policies/policy.hpp:9,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/math/special_functions/sign.hpp:17,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/inf_nan.hpp:34,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:63,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast/try_lexical_convert.hpp:42,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:32,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/mpl/begin_end_fwd.hpp:23:38: note:   ‘boost::mpl::end’
+ template< typename Sequence > struct end;
+                                      ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/range/functions.hpp:19:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/iterator_range_core.hpp:38,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/lexical_cast.hpp:30,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/reflect/reflect.hpp:10,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/time.hpp:138,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/log/logger.hpp:3,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/exception/exception.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/fc/include/fc/uint128.hpp:6,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/global_property_object.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/boost_1_67_0/include/boost/range/end.hpp:100:61: note:   ‘boost::range_adl_barrier::end’
+ inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type end( const T& r )
+                                                             ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/container/list/cons.hpp:17:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/iterator/segmented_iterator.hpp:14,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:12,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/begin.hpp:18,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple/detail/convert_impl.hpp:12,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/iterator/zip_iterator.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/combine.hpp:14,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:33,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:
+/home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/end.hpp:92:5: note:   ‘boost::fusion::end’
+     end(Sequence const& seq)
+     ^~~
+In file included from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic/begin.hpp:14:0,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple/detail/convert_impl.hpp:12,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/fusion/adapted/boost_tuple.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/iterator/zip_iterator.hpp:20,
+                 from /home/oxarbitrage/boost_1_67_0/include/boost/range/combine.hpp:14,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_bet.cpp:33,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:26:
+/home/oxarbitrage/boost_1_67_0/include/boost/fusion/sequence/intrinsic_fwd.hpp:68:16: note:   ‘boost::fusion::result_of::end’
+         struct end;
+                ^~~
+In file included from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/account_object.hpp:26:0,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/include/graphene/chain/database.hpp:27,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_balance.cpp:25,
+                 from /home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/database.cpp:25:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp: In instantiation of ‘const graphene::db::object& graphene::chain::generic_index<ObjectType, MultiIndexType>::create(const std::function<void(graphene::db::object&)>&) [with ObjectType = graphene::chain::vesting_balance_object; MultiIndexType = int]’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:475:3:   required from here
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:62:43: error: request for member ‘insert’ in ‘((graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>*)this)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::_indices’, which is of non-class type ‘graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::index_type {aka int}’
+             auto insert_result = _indices.insert( std::move(item) );
+                                  ~~~~~~~~~^~~~~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp: In instantiation of ‘void graphene::chain::generic_index<ObjectType, MultiIndexType>::modify(const graphene::db::object&, const std::function<void(graphene::db::object&)>&) [with ObjectType = graphene::chain::vesting_balance_object; MultiIndexType = int]’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:475:3:   required from here
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:72:32: error: request for member ‘modify’ in ‘((graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>*)this)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::_indices’, which is of non-class type ‘graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::index_type {aka int}’
+             auto ok = _indices.modify(_indices.iterator_to(static_cast<const ObjectType&>(obj)),
+                       ~~~~~~~~~^~~~~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:72:48: error: request for member ‘iterator_to’ in ‘((graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>*)this)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::_indices’, which is of non-class type ‘graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::index_type {aka int}’
+             auto ok = _indices.modify(_indices.iterator_to(static_cast<const ObjectType&>(obj)),
+                                       ~~~~~~~~~^~~~~~~~~~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp: In instantiation of ‘void graphene::chain::generic_index<ObjectType, MultiIndexType>::remove(const graphene::db::object&) [with ObjectType = graphene::chain::vesting_balance_object; MultiIndexType = int]’:
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/chain/db_notify.cpp:475:3:   required from here
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:93:22: error: request for member ‘erase’ in ‘((graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>*)this)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::_indices’, which is of non-class type ‘graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::index_type {aka int}’
+             _indices.erase( _indices.iterator_to( static_cast<const ObjectType&>(obj) ) );
+             ~~~~~~~~~^~~~~
+/home/oxarbitrage/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays/libraries/db/include/graphene/db/generic_index.hpp:93:38: error: request for member ‘iterator_to’ in ‘((graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>*)this)->graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::_indices’, which is of non-class type ‘graphene::chain::generic_index<graphene::chain::vesting_balance_object, int>::index_type {aka int}’
+             _indices.erase( _indices.iterator_to( static_cast<const ObjectType&>(obj) ) );
+                             ~~~~~~~~~^~~~~~~~~~~
+libraries/chain/CMakeFiles/graphene_chain.dir/build.make:62: recipe for target 'libraries/chain/CMakeFiles/graphene_chain.dir/database.cpp.o' failed
+make[2]: *** [libraries/chain/CMakeFiles/graphene_chain.dir/database.cpp.o] Error 1
+CMakeFiles/Makefile2:741: recipe for target 'libraries/chain/CMakeFiles/graphene_chain.dir/all' failed
+make[1]: *** [libraries/chain/CMakeFiles/graphene_chain.dir/all] Error 2
+Makefile:129: recipe for target 'all' failed
+make: *** [all] Error 2
+oxarbitrage@oxarbitrage-Lenovo-ideapad-320S-14IKB:~/CLionProjects/peerplays/peerplays_qa_gpos_18.04/peerplays$ 
