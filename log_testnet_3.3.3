@@ -1,0 +1,30 @@
+1842000ms th_a       witness.cpp:281               block_production_loo ] Not producing block because production is disabled until we receive a recent block (see: --enable-stale-production)
+
+Thread 18 "p2p" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7fffa3ffc700 (LWP 19386)]
+0x00007ffff7848cda in EVP_EncryptUpdate () from /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+(gdb) bt
+#0  0x00007ffff7848cda in EVP_EncryptUpdate () from /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+#1  0x0000000001684e6c in fc::aes_encoder::encode (this=this@entry=0x7ffeee0dee60, plaintxt=plaintxt@entry=0x7ffeecc8c580 "(", plaintext_len=48,
+    ciphertxt=<optimized out>) at /root/bitshares/bp/bitshares-core/libraries/fc/src/crypto/aes.cpp:73
+#2  0x000000000133587f in graphene::net::stcp_socket::writesome (this=0x7ffeee0ded90, buffer=0x7ffeecc8c580 "(", len=48)
+    at /root/bitshares/bp/bitshares-core/libraries/net/stcp_socket.cpp:155
+#3  0x0000000001113443 in fc::ostream::write (this=this@entry=0x7ffeee0ded90, buf=buf@entry=0x7ffeecc8c580 "(", len=len@entry=48)
+    at /root/bitshares/bp/bitshares-core/libraries/fc/src/io/iostream.cpp:294
+#4  0x00000000013342a2 in graphene::net::detail::message_oriented_connection_impl::send_message (this=0x7ffeee0ded80, message_to_send=...)
+    at /root/bitshares/bp/bitshares-core/libraries/net/message_oriented_connection.cpp:265
+#5  0x0000000001335148 in graphene::net::message_oriented_connection::send_message (this=this@entry=0x7ffeefa96d50, message_to_send=...)
+    at /root/bitshares/bp/bitshares-core/libraries/net/message_oriented_connection.cpp:370
+#6  0x000000000132a69d in graphene::net::peer_connection::send_queued_messages_task (this=0x7ffeefa96d20)
+    at /root/bitshares/bp/bitshares-core/libraries/net/peer_connection.cpp:304
+#7  0x000000000132b51c in graphene::net::peer_connection::<lambda()>::operator() (__closure=<optimized out>)
+    at /root/bitshares/bp/bitshares-core/libraries/net/peer_connection.cpp:367
+#8  fc::detail::void_functor_run<graphene::net::peer_connection::send_queueable_message(std::unique_ptr<graphene::net::peer_connection::queued_message>&&)::<lambda()> >::run(void *, void *) (functor=<optimized out>, prom=0x7ffeee0deca8) at /root/bitshares/bp/bitshares-core/libraries/fc/include/fc/thread/task.hpp:107
+#9  0x00000000010ef314 in fc::task_base::run_impl (this=this@entry=0x7ffeee0dec30) at /root/bitshares/bp/bitshares-core/libraries/fc/src/thread/task.cpp:44
+#10 0x00000000010ef8a5 in fc::task_base::run (this=this@entry=0x7ffeee0dec30) at /root/bitshares/bp/bitshares-core/libraries/fc/src/thread/task.cpp:33
+#11 0x00000000010ecebf in fc::thread_d::run_next_task (this=0x7fff9c0008c0) at /root/bitshares/bp/bitshares-core/libraries/fc/src/thread/thread_d.hpp:534
+#12 fc::thread_d::process_tasks (this=this@entry=0x7fff9c0008c0) at /root/bitshares/bp/bitshares-core/libraries/fc/src/thread/thread_d.hpp:583
+#13 0x00000000010ed61c in fc::thread_d::start_process_tasks (my=140735810635968) at /root/bitshares/bp/bitshares-core/libraries/fc/src/thread/thread_d.hpp:514
+#14 0x00000000016e73e1 in make_fcontext ()
+#15 0x0000000000000000 in ?? ()
+(gdb)   
