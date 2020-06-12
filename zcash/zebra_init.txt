@@ -1,0 +1,22 @@
+oxarbitrage@oxarbitrage:~/zebra/target/release$ ls
+build  examples     libzebra_chain.d     libzebra_client.d     libzebra_consensus.d     libzebrad.d     libzebra_network.d     libzebra_rpc.d     libzebra_script.d     libzebra_state.d     libzebra_test_vectors.d     zebrad
+deps   incremental  libzebra_chain.rlib  libzebra_client.rlib  libzebra_consensus.rlib  libzebrad.rlib  libzebra_network.rlib  libzebra_rpc.rlib  libzebra_script.rlib  libzebra_state.rlib  libzebra_test_vectors.rlib  zebrad.d
+oxarbitrage@oxarbitrage:~/zebra/target/release$ RUST_BACKTRACE=full ./zebrad start
+Jun 12 11:19:24.918  INFO zebrad::components::tracing: Initializing tracing endpoint
+Jun 12 11:19:24.918  INFO zebrad::components::metrics: Initializing metrics endpoint
+Jun 12 11:19:24.918  WARN zebrad::commands::start: starting application
+filter: info!
+Default config: ZebradConfig { tracing: TracingSection { filter: "info" }, network: Config { listen_addr: V4(127.0.0.1:8233), network: Mainnet, user_agent: "🦓Zebra v2.0.0-alpha.0🦓", initial_mainnet_peers: {"dnsseed.str4d.xyz:8233", "dnsseed.znodes.org:8233", "dnsseed.z.cash:8233"}, initial_testnet_peers: {"dnsseed.testnet.z.cash:18233"}, peerset_request_buffer_size: 10, ewma_default_rtt: 1s, ewma_decay_time: 60s, handshake_timeout: 4s, new_peer_interval: 60s, peerset_initial_target_size: 50 }, metrics: MetricsSection { endpoint_addr: V4(127.0.0.1:9999) } }
+The application panicked (crashed).
+Message:  called `Result::unwrap()` on an `Err` value: ValueAfterTable
+Location: zebrad/src/commands/start.rs:37
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ BACKTRACE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                          (5 post panic frames hidden)                          
+ 5: core::option::expect_none_failed::ha9782a6ef355446f
+    at /rustc/8d69840ab92ea7f4d323420088dd8c9775f180cd/src/libcore/option.rs:1211
+ 6: <zebrad::commands::start::StartCmd as abscissa_core::runnable::Runnable>::run::h63abb17f2537423d
+    at <unknown source file>
+ 7: abscissa_core::application::Application::run::hf8affd15a581845c
+    at <unknown source file>
+Aborted (core dumped)
+oxarbitrage@oxarbitrage:~/zebra/target/release$ 
