@@ -1,0 +1,50 @@
+oxarbitrage@oxarbitrage:~/zebra/issue247/zebra$ cargo build -p zebrad --release
+   Compiling zebrad v0.1.0 (/home/oxarbitrage/zebra/issue247/zebra/zebrad)
+error[E0599]: no method named `run` found for reference `&std::option::Option<std::path::PathBuf>` in the current scope
+  --> zebrad/src/commands.rs:23:35
+   |
+23 | #[derive(Command, Debug, Options, Runnable)]
+   |                                   ^^^^^^^^ method not found in `&std::option::Option<std::path::PathBuf>`
+   |
+   = note: this error originates in a derive macro (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `run` found for reference `&bool` in the current scope
+  --> zebrad/src/commands.rs:23:35
+   |
+23 | #[derive(Command, Debug, Options, Runnable)]
+   |                                   ^^^^^^^^ method not found in `&bool`
+   |
+   = note: this error originates in a derive macro (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `run` found for reference `&std::option::Option<commands::ZebradSubCmd>` in the current scope
+  --> zebrad/src/commands.rs:23:35
+   |
+23 | #[derive(Command, Debug, Options, Runnable)]
+   |                                   ^^^^^^^^ method not found in `&std::option::Option<commands::ZebradSubCmd>`
+   |
+   = note: this error originates in a derive macro (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no associated item named `Start` found for struct `commands::ZebradCmd` in the current scope
+  --> zebrad/src/commands.rs:96:24
+   |
+24 | pub struct ZebradCmd {
+   | -------------------- associated item `Start` not found for this
+...
+96 |             ZebradCmd::Start(cmd) => cmd.override_config(config),
+   |                        ^^^^^ associated item not found in `commands::ZebradCmd`
+
+warning: unused import: `config::Override`
+  --> zebrad/src/commands.rs:16:5
+   |
+16 |     config::Override, Command, Configurable, FrameworkError, Help, Options, Runnable,
+   |     ^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0599`.
+error: could not compile `zebrad`.
+
+To learn more, run the command again with --verbose.
+oxarbitrage@oxarbitrage:~/zebra/issue247/zebra$ 
