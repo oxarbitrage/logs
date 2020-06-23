@@ -1,0 +1,24 @@
+oxarbitrage@oxarbitrage:~/zebra/issue247/zebra$ cargo build -p zebrad --release
+   Compiling zebrad v0.1.0 (/home/oxarbitrage/zebra/issue247/zebra/zebrad)
+error[E0277]: the trait bound `commands::ZebradCmd: abscissa_core::runnable::Runnable` is not satisfied
+  --> zebrad/src/components/tracing.rs:92:22
+   |
+92 |                     .state()
+   |                      ^^^^^ the trait `abscissa_core::runnable::Runnable` is not implemented for `commands::ZebradCmd`
+   |
+   = note: required because of the requirements on the impl of `abscissa_core::command::Command` for `abscissa_core::command::entrypoint::EntryPoint<commands::ZebradCmd>`
+
+error[E0277]: the trait bound `commands::ZebradCmd: abscissa_core::runnable::Runnable` is not satisfied
+   --> zebrad/src/components/tracing.rs:102:22
+    |
+102 |                     .state_mut()
+    |                      ^^^^^^^^^ the trait `abscissa_core::runnable::Runnable` is not implemented for `commands::ZebradCmd`
+    |
+    = note: required because of the requirements on the impl of `abscissa_core::command::Command` for `abscissa_core::command::entrypoint::EntryPoint<commands::ZebradCmd>`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0277`.
+error: could not compile `zebrad`.
+
+To learn more, run the command again with --verbose.
