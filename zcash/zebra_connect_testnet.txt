@@ -1,0 +1,31 @@
+$ ./target/release/zebrad connect
+Jun 24 09:41:36.259  INFO zebrad::components::tracing: Initializing tracing endpoint
+Jun 24 09:41:36.260  INFO zebrad::components::metrics: Initializing metrics endpoint
+Jun 24 09:41:36.260  INFO zebrad::commands::connect: connect.addr=V4(127.0.0.1:8233)
+Jun 24 09:41:36.260  INFO zebrad::commands::connect: begin tower-based peer handling test stub self=ConnectCmd { addr: V4(127.0.0.1:8233) }
+Jun 24 09:41:45.251  INFO add_initial_peers: zebra_network::peer_set::initialize: Connecting to initial peer set initial_peers={V4(91.121.88.52:18233), V4(52.203.159.156:18233), V6([2605:6400:20:cd0:e56e:e74:bb7:a80]:18233), V4(217.160.142.49:18233), V4(138.197.216.253:18233), V4(51.15.166.148:18233), V4(54.209.49.207:18233), V4(104.16.174.83:18233), V4(37.59.57.96:18233), V4(13.228.164.120:18233), V4(95.216.242.46:18233), V4(138.68.230.245:18233), V4(88.99.162.254:18233), V4(198.199.112.230:18233), V4(47.98.224.31:18233), V4(209.141.47.197:18233), V4(13.115.17.0:18233)}
+Jun 24 09:41:57.105  INFO zebra_network::peer_set::initialize: Sending initial request for peers
+Jun 24 09:41:57.602  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=0 in_flight=0 downloaded=1 highest=0
+Jun 24 09:42:20.130  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=500 in_flight=50 downloaded=1 highest=0
+Jun 24 09:42:24.518  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=1000 in_flight=100 downloaded=1 highest=0
+Jun 24 09:42:29.085  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=1500 in_flight=150 downloaded=1 highest=0
+Jun 24 09:42:33.301  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=2000 in_flight=200 downloaded=1 highest=0
+Jun 24 09:42:37.289  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=2500 in_flight=250 downloaded=1 highest=0
+Jun 24 09:42:41.801  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=3000 in_flight=300 downloaded=1 highest=0
+Jun 24 09:42:46.145  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=3500 in_flight=300 downloaded=501 highest=500
+Jun 24 09:42:50.451  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=4000 in_flight=300 downloaded=1001 highest=1000
+Jun 24 09:42:54.688  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=4500 in_flight=300 downloaded=1501 highest=1500
+Jun 24 09:42:59.005  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=5000 in_flight=300 downloaded=2001 highest=2000
+Jun 24 09:43:04.935  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=5500 in_flight=300 downloaded=2501 highest=2500
+Jun 24 09:43:10.290  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=6000 in_flight=300 downloaded=3001 highest=3000
+Jun 24 09:43:14.341  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=6500 in_flight=300 downloaded=3501 highest=3500
+Jun 24 09:43:18.666  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=7000 in_flight=300 downloaded=4001 highest=4000
+Jun 24 09:43:23.071  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=7500 in_flight=300 downloaded=4501 highest=4500
+Jun 24 09:43:27.032  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=8000 in_flight=300 downloaded=5001 highest=5000
+Jun 24 09:43:31.469  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=8500 in_flight=300 downloaded=5501 highest=5500
+Jun 24 09:43:35.673  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=9000 in_flight=300 downloaded=6001 highest=6000
+Jun 24 09:43:39.653  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=9500 in_flight=300 downloaded=6501 highest=6500
+Jun 24 09:43:43.696  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=10000 in_flight=300 downloaded=7001 highest=7000
+Jun 24 09:43:48.125  INFO zebrad::commands::connect: requested more hashes new_hashes=500 requested=10500 in_flight=300 downloaded=7501 highest=7500
+^C
+$ 
